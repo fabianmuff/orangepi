@@ -1,0 +1,18 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Index of /",
+    "short_name": "Index of /",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://003eb7961004.ngrok.io/",
+    "background_color": "#000000",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [],
+    "url": "https://003eb7961004.ngrok.io/",
+    "screenshots": []
+}
