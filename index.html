@@ -19,6 +19,8 @@
     <script src="index.js"></script>
     <script src="three/examples/js/vr/HelioWebXRPolyfill.js"></script>
 
+    <script src='https://cdn.jsdelivr.net/npm/webxr-polyfill@latest/build/webxr-polyfill.js'></script>
+
     <script type="module">
 
         import * as THREE from '../three/build/three.module.js';
@@ -26,6 +28,7 @@
         import { ARButton } from './three/examples/jsm/webxr/ARButton.js';
         import { XRControllerModelFactory } from './three/examples/jsm/webxr/XRControllerModelFactory.js';
         import { SVGLoader } from '../three/examples/jsm/loaders/SVGLoader.js';
+
 
         var container;
         var camera, scene, renderer;
@@ -39,6 +42,8 @@
 
         var mesh;
         var svg;
+
+        var polyfill = new WebXRPolyfill();
 
         init();
         animate();
