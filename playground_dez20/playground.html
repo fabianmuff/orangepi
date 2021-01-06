@@ -29,17 +29,17 @@
 
 	<script type="module">
 
-		import * as THREE from '../three/build/three.module.js';
-		import { VRButton } from '../three/examples/jsm/webxr/VRButton.js';
-		import { GLTFLoader } from '../three/examples/jsm/loaders/GLTFLoader.js';
-		import { OrbitControls } from '../three/examples/jsm/controls/OrbitControls.js';
-		import { SVGLoader } from '../three/examples/jsm/loaders/SVGLoader.js';
-		import { XRControllerModelFactory } from '../three/examples/jsm/webxr/XRControllerModelFactory.js';
+		import * as THREE from 'three/build/three.module.js';
+		import { VRButton } from 'three/examples/jsm/webxr/VRButton.js';
+		import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+		import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+		import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader.js';
+		import { XRControllerModelFactory } from 'three/examples/jsm/webxr/XRControllerModelFactory.js';
 
 		import "js/annyang.min.js";
 
 		//ar button
-		import { ARButton } from '../three/examples/jsm/webxr/ARButton.js';
+		import { ARButton } from 'three/examples/jsm/webxr/ARButton.js';
 
 		//--------------------
 		//Global Variables
@@ -213,7 +213,7 @@
 
 			// add milkyWay
 			var background = new THREE.CubeTextureLoader()
-				.setPath('../three/examples/textures/cube/MilkyWay/')
+				.setPath('three/examples/textures/cube/MilkyWay/')
 				.load(['dark-s_px.jpg', 'dark-s_nx.jpg', 'dark-s_py.jpg', 'dark-s_ny.jpg', 'dark-s_pz.jpg', 'dark-s_nz.jpg']);
 
 			//scene.background = background;
@@ -253,11 +253,11 @@
 			//loadFloor();
 
 			//loads gltf objects
-			loadGLTFObject('../models/entity.glb', 0, 0, -30, "Entity 1");
-			loadGLTFObject('../models/relation.glb', 0, 5, -30, "Relation 1");
-			loadGLTFObject('../models/entity.glb', -10, 5, -30, "Entity 2");
-			loadGLTFObject('../models/attribute.glb', -17, 5, -30, "Attribute 1");
-			loadGLTFObject('../models/attribute.glb', -10, 8, -30, "Attribute 2");
+			loadGLTFObject('models/entity.glb', 0, 0, -30, "Entity 1");
+			loadGLTFObject('models/relation.glb', 0, 5, -30, "Relation 1");
+			loadGLTFObject('models/entity.glb', -10, 5, -30, "Entity 2");
+			loadGLTFObject('models/attribute.glb', -17, 5, -30, "Attribute 1");
+			loadGLTFObject('models/attribute.glb', -10, 8, -30, "Attribute 2");
 
 
 
@@ -321,7 +321,7 @@
 			scene.add(ground);
 
 			var textureLoader = new THREE.TextureLoader();
-			textureLoader.load('../three/examples/textures/floors/FloorsCheckerboard_S_Diffuse.jpg', function (map) {
+			textureLoader.load('three/examples/textures/floors/FloorsCheckerboard_S_Diffuse.jpg', function (map) {
 
 				map.wrapS = THREE.RepeatWrapping;
 				map.wrapT = THREE.RepeatWrapping;
